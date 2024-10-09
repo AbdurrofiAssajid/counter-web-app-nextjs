@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default function Footer() {
   return (
     <motion.footer
-      className="text-center text-green-800 mt-20"
+      className="text-center text-green-800 mt-8"
       initial={{
         opacity: 0,
       }}
