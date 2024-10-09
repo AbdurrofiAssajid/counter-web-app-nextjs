@@ -21,7 +21,7 @@ export default function Footer() {
       </small>
       <p className="text-xs italic font-bold">
         <a
-          href="https://word-analytics-site.vercel.app"
+          href="https://github.com/AbdurrofiAssajid"
           target="_blank"
           className=" mx-1"
         >
