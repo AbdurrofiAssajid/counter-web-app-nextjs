@@ -2,3 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.custom-shadow {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.custom-shadow-bold {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
