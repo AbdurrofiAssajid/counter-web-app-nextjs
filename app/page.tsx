@@ -59,7 +59,7 @@ export default function HomePage() {
                 <p className="font-bold text-lime-900 dark:text-slate-800 text-md mt-2">
                   Fun fact:
                 </p>
-                <i className="mt-1 text-sm font-normal text-gray-600">
+                <i className="mt-1 text-sm font-normal text-gray-700">
                   Clicking too much can lead to extreme high-fiving!
                 </i>
               </div>
@@ -84,7 +84,7 @@ export default function HomePage() {
         <div
           className={`${
             t.visible ? "animate-enter" : "animate-leave"
-          } max-w-md w-full bg-white dark:bg-yellow-500 shadow-lg rounded-lg pointer-events-auto flex ring-1 ring-black ring-opacity-5`}
+          } max-w-md w-full bg-white dark:bg-yellow-400 shadow-lg rounded-lg pointer-events-auto flex ring-1 ring-black ring-opacity-5`}
         >
           <div className="flex-1 w-0 p-4">
             <div className="flex items-start">
@@ -104,7 +104,7 @@ export default function HomePage() {
                 <p className="font-bold text-lime-900 text-md mt-2">
                   Whoa there!
                 </p>
-                <i className="mt-1 text-sm font-normal text-gray-600">
+                <i className="mt-1 text-sm font-normal text-gray-700">
                   You are on the fast track to becoming a click legend!
                 </i>
               </div>
@@ -129,12 +129,12 @@ export default function HomePage() {
         <div
           className={`${
             t.visible ? "animate-enter" : "animate-leave"
-          } max-w-md w-full bg-white shadow-lg rounded-lg pointer-events-auto flex ring-1 ring-black ring-opacity-5`}
+          } max-w-md w-full bg-white dark:bg-yellow-400  shadow-lg rounded-lg pointer-events-auto flex ring-1 ring-black ring-opacity-5`}
         >
           <div className="flex-1 w-0 p-4">
             <div className="flex items-start">
               <div className="flex-shrink-0 pt-0.5">
-                <div className="rounded-full outline outline-2 outline-lime-900">
+                <div className="rounded-full outline outline-2 outline-lime-900 dark:outline-slate-900">
                   <Image
                     className="rounded-full mt-3 mb-3 w-auto h-auto"
                     src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixqx=6GHAjsWpt9&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.2&w=160&h=160&q=80"
@@ -149,7 +149,7 @@ export default function HomePage() {
                 <p className="font-bold text-lime-900 text-md mt-2">
                   Hold tight
                 </p>
-                <i className="mt-1 text-sm font-normal text-gray-600">
+                <i className="mt-1 text-sm font-normal text-gray-700">
                   you’re just a few clicks away from unlocking the ultimate
                   tapping mastery!
                 </i>
