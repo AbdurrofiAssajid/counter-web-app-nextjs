@@ -13,11 +13,6 @@ import { motion } from "framer-motion";
 
 export default function HomePage() {
   const [counter, setCounter] = useState<number | null>(null);
-  const [showAlert, setShowAlert] = useState(false);
-  const [alertMessage, setAlertMessage] = useState({
-    title: "",
-    description: "",
-  });
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
@@ -37,13 +32,7 @@ export default function HomePage() {
     }
   }, [counter]);
 
-  const showCustomAlert = (title: string, description: string) => {
-    setAlertMessage({ title, description });
-    setShowAlert(true);
-    setTimeout(() => setShowAlert(false), 3000);
-  };
   
-
   const handleIncrease = () => {
     if (counter === null) return;
 
@@ -58,7 +47,7 @@ export default function HomePage() {
           <div className="flex-1 w-0 p-4">
             <div className="flex items-start">
               <div className="flex-shrink-0 pt-0.5">
-                <div className="rounded-full mt-2.5 outline outline-2 outline-lime-900">
+                <div className="rounded-full mt-2.5 outline outline-2 outline-lime-900 dark:outline-slate-800">
                   <Image
                     className="rounded-full mb-3"
                     src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixqx=6GHAjsWpt9&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.2&w=160&h=160&q=80"
@@ -70,7 +59,7 @@ export default function HomePage() {
                 </div>
               </div>
               <div className="ml-4 flex-1 ">
-                <p className="font-bold text-lime-900 text-md mt-2">
+                <p className="font-bold text-lime-900 dark:text-slate-800 text-md mt-2">
                   Fun fact:
                 </p>
                 <i className="mt-1 text-sm font-normal text-gray-600">
@@ -80,11 +69,11 @@ export default function HomePage() {
             </div>
           </div>
           <div
-            className="flex border rounded-full h-12 w-12 mt-8 bg-white p-2 mr-4 custom-shadow items-center justify-center"
+            className="flex border dark:border-slate-800 rounded-full h-12 w-12 mt-8 bg-white dark:bg-slate-800 p-2 mr-4 custom-shadow items-center justify-center"
             onClick={() => toast.dismiss(t.id)}
           >
             <button
-              className="rounded-full border-transparent h-full w-full flex items-center justify-center text-sm font-medium text-red-600 hover:text-red-500 focus:outline-none transition ease-in-out duration-200"
+              className="rounded-full border-transparent h-full w-full flex items-center justify-center text-sm font-medium text-red-600 hover:text-red-500 dark:text-yellow-500 dark:hover:text-yellow-400 dark:bg-slate-800 focus:outline-none transition ease-in-out duration-200"
               aria-label="Close"
             >
               <ImCross className="w-4 h-4" />
