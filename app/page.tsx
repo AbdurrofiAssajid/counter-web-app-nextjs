@@ -9,8 +9,6 @@ import { FaPlus, FaMinus } from "react-icons/fa";
 import { GrPowerReset } from "react-icons/gr";
 import { motion } from "framer-motion";
 
-
-
 export default function HomePage() {
   const [counter, setCounter] = useState<number | null>(null);
   const [isClient, setIsClient] = useState(false);
@@ -32,7 +30,6 @@ export default function HomePage() {
     }
   }, [counter]);
 
-  
   const handleIncrease = () => {
     if (counter === null) return;
 
@@ -87,12 +84,12 @@ export default function HomePage() {
         <div
           className={`${
             t.visible ? "animate-enter" : "animate-leave"
-          } max-w-md w-full bg-white shadow-lg rounded-lg pointer-events-auto flex ring-1 ring-black ring-opacity-5`}
+          } max-w-md w-full bg-white dark:bg-yellow-500 shadow-lg rounded-lg pointer-events-auto flex ring-1 ring-black ring-opacity-5`}
         >
           <div className="flex-1 w-0 p-4">
             <div className="flex items-start">
               <div className="flex-shrink-0 pt-0.5">
-                <div className="rounded-full outline outline-2 outline-lime-900">
+                <div className="rounded-full outline outline-2 outline-lime-900 dark:outline-slate-900">
                   <Image
                     className="rounded-full mt-3 mb-3 w-auto h-auto"
                     src="/photo 1.jpg"
@@ -108,17 +105,17 @@ export default function HomePage() {
                   Whoa there!
                 </p>
                 <i className="mt-1 text-sm font-normal text-gray-600">
-                  You're on the fast track to becoming a click legend!
+                  You are on the fast track to becoming a click legend!
                 </i>
               </div>
             </div>
           </div>
           <div
-            className="flex border rounded-full h-12 w-12 mt-8 bg-white p-2 mr-4 custom-shadow items-center justify-center"
+            className="flex border dark:border-slate-800 rounded-full h-12 w-12 mt-8 bg-white dark:bg-slate-800 p-2 mr-4 custom-shadow items-center justify-center"
             onClick={() => toast.dismiss(t.id)}
           >
             <button
-              className="rounded-full border-transparent h-full w-full flex items-center justify-center text-sm font-medium text-red-600 hover:text-red-500 focus:outline-none transition ease-in-out duration-200"
+              className="rounded-full border-transparent h-full w-full flex items-center justify-center text-sm font-medium text-red-600 hover:text-red-500 dark:text-yellow-500 dark:hover:text-yellow-400 dark:bg-slate-800 focus:outline-none transition ease-in-out duration-200"
               aria-label="Close"
             >
               <ImCross className="w-4 h-4" />
@@ -153,17 +150,18 @@ export default function HomePage() {
                   Hold tight
                 </p>
                 <i className="mt-1 text-sm font-normal text-gray-600">
-                  you’re just a few clicks away from unlocking the ultimate tapping mastery!
+                  you’re just a few clicks away from unlocking the ultimate
+                  tapping mastery!
                 </i>
               </div>
             </div>
           </div>
           <div
-            className="flex border rounded-full h-12 w-12 mt-8 bg-white p-2 mr-4 custom-shadow items-center justify-center"
+            className="flex border dark:border-slate-800 rounded-full h-12 w-12 mt-8 bg-white dark:bg-slate-800 p-2 mr-4 custom-shadow items-center justify-center"
             onClick={() => toast.dismiss(t.id)}
           >
             <button
-              className="rounded-full border-transparent h-full w-full flex items-center justify-center text-sm font-medium text-red-600 hover:text-red-500 focus:outline-none transition ease-in-out duration-200"
+              className="rounded-full border-transparent h-full w-full flex items-center justify-center text-sm font-medium text-red-600 hover:text-red-500 dark:text-yellow-500 dark:hover:text-yellow-400 dark:bg-slate-800 focus:outline-none transition ease-in-out duration-200"
               aria-label="Close"
             >
               <ImCross className="w-4 h-4" />
