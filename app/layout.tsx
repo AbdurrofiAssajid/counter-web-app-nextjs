@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Fancy Counter",
-  description: "Developed by accomplished developer | Rofi",
+  description: "A web-based counter tool",
 };
 
 export default function RootLayout({
