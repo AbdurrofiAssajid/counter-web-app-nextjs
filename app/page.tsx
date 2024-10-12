@@ -1,4 +1,3 @@
-// app/page.tsx
 "use client";
 
 import { useState, useEffect } from "react";
@@ -34,7 +33,7 @@ export default function HomePage() {
     if (counter === null) return;
 
     const newCount = counter + 1;
-    if (newCount === 10) {
+    if (newCount === 20 || newCount === 80) {
       toast.custom((t) => (
         <div
           className={`${
@@ -57,7 +56,7 @@ export default function HomePage() {
               </div>
               <div className="ml-4 flex-1 ">
                 <p className="font-bold text-lime-900 dark:text-slate-800 text-md mt-2">
-                  Fun fact:
+                 Fun fact:
                 </p>
                 <i className="mt-1 text-sm font-normal text-gray-700">
                   Clicking too much can lead to extreme high-fiving!
@@ -79,7 +78,7 @@ export default function HomePage() {
         </div>
       ));
     }
-    if (newCount === 20) {
+    if (newCount === 40 || newCount === 100) {
       toast.custom((t) => (
         <div
           className={`${
@@ -102,7 +101,7 @@ export default function HomePage() {
               </div>
               <div className="ml-3 flex-1">
                 <p className="font-bold text-lime-900 text-md mt-2">
-                  Whoa there!
+                  Whoa there! 
                 </p>
                 <i className="mt-1 text-sm font-normal text-gray-700">
                   You are on the fast track to becoming a click legend!
@@ -124,7 +123,7 @@ export default function HomePage() {
         </div>
       ));
     }
-    if (newCount === 30) {
+    if (newCount === 60 || newCount === 120) {
       toast.custom((t) => (
         <div
           className={`${
@@ -137,7 +136,7 @@ export default function HomePage() {
                 <div className="rounded-full outline outline-2 outline-lime-900 dark:outline-slate-900">
                   <Image
                     className="rounded-full mt-3 mb-3 w-auto h-auto"
-                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixqx=6GHAjsWpt9&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.2&w=160&h=160&q=80"
+                    src="/profile3.jpeg"
                     width={60}
                     height={60}
                     quality={95}
