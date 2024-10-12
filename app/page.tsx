@@ -136,7 +136,7 @@ export default function HomePage() {
                 <div className="rounded-full outline outline-2 outline-lime-900 dark:outline-slate-900">
                   <Image
                     className="rounded-full mt-3 mb-3 w-auto h-auto"
-                    src="/profile3.jpeg"
+                    src="/profile3.jpg"
                     width={60}
                     height={60}
                     quality={95}
